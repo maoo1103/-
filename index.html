@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>WishVerse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Pinyon Script serves as the Quentin-style font */
+      @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Noto+Serif+SC:wght@400;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap');
+      
+      body {
+        /* User requested: Ordinary text (Simplified) should be prioritized. Swapped order of Zen Old Mincho and Noto Serif SC. */
+        font-family: "Americana", "Noto Serif SC", "Zen Old Mincho", serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fdf2f8; 
+        overflow: hidden; 
+      }
+
+      .font-quentin {
+        font-family: 'Pinyon Script', cursive;
+      }
+
+      /* Helper for specific Zen Old Mincho usage if needed explicitly */
+      .font-zen {
+        font-family: "Noto Serif SC", serif; /* Changed to Noto Serif SC for consistency with "Ordinary Text" request */
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.4.2",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "three": "https://esm.sh/three@^0.182.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "html2canvas": "https://esm.sh/html2canvas@1.4.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
