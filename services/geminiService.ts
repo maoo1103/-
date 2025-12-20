@@ -57,7 +57,9 @@ export const generateCakeImage = async (
   try {
     // Always instantiate fresh to pick up the latest API key from process.env
     // Corrected initialization to strictly use process.env.API_KEY
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
+    const ai = new GoogleGenAI({ 
+  apiKey: (import.meta.env.VITE_GEMINI_API_KEY || "") as string 
+});
     
     // Cardcaptor Sakura / CLAMP Style Injection
     const stylePrompt = `
